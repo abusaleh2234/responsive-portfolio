@@ -99,7 +99,7 @@ header{
 /* about-section */
 
 .about{
-    margin: 80px 0;
+    margin: 80px 150px;
     padding: 80px;
     border-radius: 10px;
     background-color: #FFF8F3;
@@ -136,7 +136,9 @@ line-height: 30px;
 }
 
 /* what i larn skill */
-
+/* .what-i-do-section{
+    margin: 0 150px;
+} */
 .skill-container{
     display: flex;
     justify-content: space-around;
@@ -166,11 +168,12 @@ line-height: 30px;
 /* resume-section */
 .resume-section{
     padding: 70px;
+
 }
 .resume{
     display: flex;
     column-gap: 40px;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 
 }
 .dow-cv{
@@ -201,14 +204,14 @@ line-height: 30px;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    max-width: 460px;
+    /* max-width: 460px; */
 }
 .expreance-info p{
     color: #757575;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    max-width: 460px;
+    /* max-width: 460px; */
 }
 
 /* footer-section */
@@ -241,11 +244,86 @@ line-height: 30px;
     padding-right: 20px;
 }
 .massege input[type="text"], .massege input[type="email"], textarea{
-    padding: 18px 250px 18px 30px;
+    padding: 18px 0 18px 30px;
     margin: 10px 0;
     border: 0;
     border-radius: 5px;
+    width: 70%;
+}
+.massege input{
+    display: block;
 }
 /* .massege input{
     
 } */
+.hide{
+    display: none;
+}
+/* responsive-portfoilo */
+
+@media screen and (max-width:576px) {
+    .skill-container, .footer-container, .banner, .about-info-container{
+       flex-direction: column;
+        
+    }
+    .banner {
+        padding: 30px;
+    }
+    .navbar {
+        display: block;
+    }
+    .nav-btn-part > ul {
+        flex-direction: column;
+    }
+    .baner-content .primary-btn{
+        margin-top: 10px;
+    }
+    header{
+        background-image:none;
+
+    }
+    .footer-container, .about{
+        padding: 10px;
+    }
+    .about{
+        margin: 10px;
+    }
+    .connect, .massege{
+        width: 100%;
+    }
+    .resume{
+       flex-direction: column;
+    
+    }
+    .education-info p {
+        max-width: 380px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px){
+    .banner {
+        padding: 30px;
+    }
+    .about {
+        margin: 0 50px;
+    }
+    .navbar {
+        padding: 30px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:1150px) {
+    .education-info, .expreance-info {
+        width: 100%;
+    }
+    .about-info-container, .skill-container, .banner{
+        flex-direction: column;
+         
+     }
+     header{
+        background-image:none;
+
+    }
+    /* .banner{
+
+        padding: 30px 30px 0px 150px;
+    } */
+}
